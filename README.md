@@ -113,6 +113,9 @@ python cengage_ripper.py --rebuild
 
 ## Command line reference
 
+Every default lives in `config.json` (documented in `config.py`); the flags below override it for one
+run.
+
 ### Capture
 
 | Flag | Effect |
