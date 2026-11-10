@@ -1,0 +1,38 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# ---- Captured material (may contain licensed publisher content) ----
+# Wildcards on purpose: captures live in pages/, pages.full/, pages.test12/,
+# pages.bak-<date>/, and debug dumps in debug/ or debug.bak-*/.
+pages*/
+debug*/
+diagnose*/
+output*/
+progress.json
+_selftest/
+_itest/
+chrome-profile/
+.last_url
+_old_backup_*/
+
+# Real reader snapshots stay local; the repo ships synthetic fixtures only.
+fixtures_singlefile.html
+fixtures_shell.html
+
+# Internal working notes / acceptance reports
+_private/
+
+# ---- Generated print artefacts ----
+*.pdf
+*.print.html
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

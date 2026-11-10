@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>eTextbook: Sample Book - Reader</title>
+<style>
+  body {{ margin:0; font:14px system-ui, sans-serif; }}
+  #iframe-page {{ width:100%; height:calc(100vh - 64px); border:0; }}
+  .page-controls {{ display:flex; gap:12px; align-items:center; padding:8px 16px; }}
+  #onetrust-consent-sdk {{ position:fixed; inset:auto 0 0 0; background:#eee; }}
+</style>
+</head>
+<body class="reader-shell">
+<header class="reader-top">
+  <button id="toc-toggle">Table of Contents</button>
+  <button id="search-toggle">Search</button>
+  <span class="screen-reader-only">Selection mode disabled.</span>
+</header>
+<div id="onetrust-consent-sdk"><p>Privacy Preference Center</p></div>
+<iframe id="iframe-page" name="iframe-page" title="page content" src="about:blank"></iframe>
+<div class="block-of-pagenumbers">
+  <span class="pagenumber rs_skip" epub:type="pagebreak" data-after="from i to xxi"></span>
+  <span class="pagenumber rs_skip" epub:type="pagebreak" data-after="xxii"></span>
+</div>
+<div class="page-controls">
+  <button id="previous-page-button">Previous page</button>
+  <span id="pageNumber">iv</span>
+  <button id="next-page-button">Next page</button>
+</div>
+<script>window.__READER_STATE__ = {{page: "iv"}};</script>
+</body>
+</html>
