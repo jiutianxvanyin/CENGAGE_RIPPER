@@ -25,8 +25,6 @@ PAGE = """<!DOCTYPE html>
   body.webreader {{ margin:0 auto; max-width:720px; padding:24px 28px;
                     font:16px/2.0 Georgia, serif; color:#1b1b1b; }}
   h1 {{ font-size:1.6em; line-height:1.3; margin:0 0 .8em; }}
-  .keytermentry {{ display:block; }}
-  .footnote-wrapper {{ display:block; }}
 </style>
 </head>
 <body class="webreader" data-cgi="SAMPLEBOOK0001" epub:type="{epub_type}">
@@ -49,7 +47,7 @@ data-cgi attribute, an epub:type role, and pagebreak markers.</p>
 <div class="keytermentry"><button class="keyterm">nominal scale</button></div>
 <p>. For example, referring to the data in Table 1.1, the labels are names and
 carry no order, so arithmetic on them would be meaningless.</p>
-<p>Fitch Rating: the rating is appraised by the Fitch Group<span class="footnote-wrapper">*</span>; the ratings range from a high of AAA to a low of D, and the scale is reviewed every year.</p>
+<p>Fitch Rating: the rating is appraised by the Fitch Group<div class="footnote-wrapper">*</div>; the ratings range from a high of AAA to a low of D, and the scale is reviewed every year.</p>
 <p>Data sets come in many shapes. A cross-sectional sample observes many units at
 one moment, while a time series follows one unit over many periods. Choosing the
 wrong shape makes a perfectly clean table answer the wrong question, which is why

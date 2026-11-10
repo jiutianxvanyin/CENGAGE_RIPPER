@@ -62,7 +62,7 @@ removal. The result is a normal PDF you can read offline, search, annotate and p
 ## Install
 
 ```bash
-git clone <this-repo> cengage-ripper
+git clone https://github.com/<your-account>/cengage-ripper.git
 cd cengage-ripper
 python -m pip install -r requirements.txt
 ```
@@ -615,6 +615,10 @@ These are honest limits, not a to-do list that will disappear:
   number repeated.
 - **A few bookmarks stay on the previous section** when the heading is an image or is split across
   lines in the text layer. Reported as a warning.
+- **Invisible anchors live in the text layer.** Every captured page starts with a transparent
+  `G####` marker at 1px. It is what binds book pages to sheets, so it must be in the text layer; it
+  never prints and is invisible on screen, but selecting a whole page or searching for `G0042` will
+  turn it up.
 - **Cengage-specific.** The frame heuristics, page controls and link rewriting assume the Cengage
   webreader. Other EPUB readers would need their own `FRAME_URL_HINTS` and page controls.
 - **Not a downloader.** The tool walks the reader page by page at human speed. It is not built to
