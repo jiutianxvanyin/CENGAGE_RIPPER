@@ -62,8 +62,8 @@ removal. The result is a normal PDF you can read offline, search, annotate and p
 ## Install
 
 ```bash
-git clone https://github.com/<your-account>/cengage-ripper.git
-cd cengage-ripper
+git clone git@github.com:jiutianxvanyin/CENGAGE_RIPPER.git
+cd CENGAGE_RIPPER
 python -m pip install -r requirements.txt
 ```
 
